@@ -3,10 +3,11 @@
 preferences {
   input("username", "text", title: "Username", description: "Your Carwings username")
   input("password", "password", title: "Password", description: "Your Carwings password")
+  input("checkTime", "time", title: "When to check", description: "When should I check?")  
 }
 
 metadata {
-  definition (name: "carwings", author: "mick@staugaard.com") {
+  definition (name: "carwingsChargingCheck", author: "erich@nachbar.biz") {
     capability "Battery"
     capability "Polling"
     attribute "charging", "string"
